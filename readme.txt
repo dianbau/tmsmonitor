@@ -36,3 +36,16 @@ git push -u origin master
 
 git@github.com:dianbau/tmsmonitor.git using SSH
 $ git clone git@github.com:michaelliao/gitskills.git
+
+git remote add origin3 git@github.com:dianbau/tmsmonitor.git
+git push -u origin3 master
+
+git remote
+git remote remove origin
+
+git checkout -b dev
+
+git branch dev
+git checkout dev
+
+git branch
