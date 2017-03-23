@@ -62,9 +62,55 @@ $ git branch -d dev
 Deleted branch dev (was fec145a).
 
 
-git branch
-git branch <name>
-git checkout <name>
-+git checkout -b <name>
-git merge <name>
-git branch -d <name>
+git branch :list branches
+git branch <name> :create branch
+git checkout <name> :switch branch
+git checkout -b <name> :create and switch branch
+git merge <name>  :merge to the current branch
+git branch -d <name> :delete branch
+
+
+$ git log --graph --pretty=oneline --abbrev-commit
+
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ readme.txt |    1 +
+ 
+git stash
+git stash list
+stash@{0}: WIP on dev: 6224937 add merge
+
+$ git stash apply stash@{0}         git stash drop
+$ git stash pop
+
+$ git branch -D feature-vulcan     :force to delete
+Deleted branch feature-vulcan (was 756d4af).
+
+
+$ git checkout -b dev origin/dev     others checkout the branch code!
+git pull       execute before push 
+
+$ git clone git@github.com:michaelliao/learngit.git
+$ git branch --set-upstream dev origin/dev
+Branch dev set up to track remote branch dev from origin.
+
+$ git tag v0.9 6224937
+$ git tag -a v0.1 -m "version 0.1 released" 3628164
+$ git show v0.9
+
+$ git tag -d v0.1
+Deleted tag 'v0.1' (was e078af9)
+
+$ git push origin v1.0
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:michaelliao/learngit.git
+ * [new tag]         v1.0 -> v1.0
+ 
+$ git push origin --tags    push all!
+
+$ git push origin :refs/tags/v0.9   remove delete
+To git@github.com:michaelliao/learngit.git
+ - [deleted]         v0.9
+ 
+ .gitignore
+ git check-ignore -v App.class
