@@ -24,3 +24,12 @@ git diff HEAD -- readme.txt
 git checkout -- readme.txt "cancel the modifications to the repo or the stage - UNMODIFY" replace workspace with repo
 git reset HEAD readme.txt "unstage"
 git rm user.txt
+
+$ ssh-keygen -t rsa -C "youremail@example.com"
+
+echo "# tmsmonitor" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dianbau/tmsmonitor.git
+git push -u origin master
