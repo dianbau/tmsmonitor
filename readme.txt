@@ -20,3 +20,7 @@ git reset --hard head^^
 git reset --hard head~10
 use "git reset HEAD <file>..." to unstage
 git diff HEAD -- readme.txt
+
+git checkout -- readme.txt "cancel the modifications to the repo or the stage - UNMODIFY" replace workspace with repo
+git reset HEAD readme.txt "unstage"
+git rm user.txt
