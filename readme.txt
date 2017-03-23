@@ -36,3 +36,5 @@ git push -u origin master
 
 git@github.com:dianbau/tmsmonitor.git using SSH
 $ git clone git@github.com:michaelliao/gitskills.git
+
+Test merge
