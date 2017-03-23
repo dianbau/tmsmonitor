@@ -18,3 +18,4 @@ git reset --hard head^
 git reset --hard 8797896
 git reset --hard head^^
 git reset --hard head~10
+use "git reset HEAD <file>..." to unstage
