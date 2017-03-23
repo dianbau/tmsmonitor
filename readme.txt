@@ -37,4 +37,34 @@ git push -u origin master
 git@github.com:dianbau/tmsmonitor.git using SSH
 $ git clone git@github.com:michaelliao/gitskills.git
 
+Dev
 Test merge
+=====
+Master
+git remote add origin3 git@github.com:dianbau/tmsmonitor.git
+git push -u origin3 master
+
+git remote
+git remote remove origin
+
+git checkout -b dev
+
+git branch dev
+git checkout dev
+
+git branch
+
+$ git checkout master
+Switched to branch 'master'
+$ git merge dev         
+merge DEV to current branch
+$ git branch -d dev
+Deleted branch dev (was fec145a).
+
+
+git branch
+git branch <name>
+git checkout <name>
++git checkout -b <name>
+git merge <name>
+git branch -d <name>
