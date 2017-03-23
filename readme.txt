@@ -33,3 +33,6 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/dianbau/tmsmonitor.git
 git push -u origin master
+
+git@github.com:dianbau/tmsmonitor.git using SSH
+$ git clone git@github.com:michaelliao/gitskills.git
