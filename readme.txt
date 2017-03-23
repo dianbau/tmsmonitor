@@ -49,3 +49,18 @@ git branch dev
 git checkout dev
 
 git branch
+
+$ git checkout master
+Switched to branch 'master'
+$ git merge dev         
+merge DEV to current branch
+$ git branch -d dev
+Deleted branch dev (was fec145a).
+
+
+git branch
+git branch <name>
+git checkout <name>
++git checkout -b <name>
+git merge <name>
+git branch -d <name>
